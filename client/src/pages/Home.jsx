@@ -20,7 +20,7 @@ export default function Home() {
         setLoading(false);
       } catch (error) {
         console.log(error.message);
-        setLoading(false); // Make sure to set loading to false in case of error
+        setLoading(false);
       }
     };
 
@@ -36,7 +36,6 @@ export default function Home() {
 
   return (
     <div>
-      {/* Loading popup */}
       {loading && <LoadingPopup />}
 
       <div className="flex justify-center pb-5 pt-6 gap-9 items-center top-16 z-10 text-white">

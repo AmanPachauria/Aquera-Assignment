@@ -1,24 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGlobe, faUsers, faMap } from '@fortawesome/free-solid-svg-icons';
 
 export default function PlanetCard({ planet }) {
-
   return (
-    <div className="flex flex-col overflow-hidden rounded-lg border bg-white">
-      <div className="flex flex-col space-y-1.5 p-4 pb-2">
-        <h3 className="text-3xl font-semibold whitespace-nowrap leading-none tracking-tight">
-          {planet.name}
+    <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+      <div className="p-6">
+        <h3 className="text-2xl font-bold text-gray-800 flex items-center mb-4">
+          <FontAwesomeIcon icon={faGlobe} className="text-blue-500 mr-2" /> {planet.name}
         </h3>
-        <p className="text-md text-muted-foreground flex items-center gap-1">
-          Climate: {planet.climate}
+        <p className="text-sm text-gray-600 flex items-center mb-2">
+          <FontAwesomeIcon icon={faMap} className="text-gray-400 mr-1" /> Climate: {planet.climate}
         </p>
-        <p className="text-md text-muted-foreground flex items-center gap-1">
-          Population: {planet.population}
+        <p className="text-sm text-gray-600 flex items-center mb-2">
+          <FontAwesomeIcon icon={faUsers} className="text-gray-400 mr-1" /> Population: {planet.population}
         </p>
-        <p className="text-md text-muted-foreground flex items-center gap-1">
-          Terrain: {planet.terrain}
+        <p className="text-sm text-gray-600 flex items-center">
+          <FontAwesomeIcon icon={faMap} className="text-gray-400 mr-1" /> Terrain: {planet.terrain}
         </p>
       </div>
-      
     </div>
   );
 }
