@@ -54,7 +54,7 @@ export default function Home() {
         </button>
       </div>
 
-      <div className="p-8 pt-7 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 xl:gap-8">
+      <div className="p-8 pt-0 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 xl:gap-8">
         {planetData && planetData.map((planet) => (
           <PlanetCard key={planet.id} planet={planet} />
         ))}
