@@ -31,7 +31,7 @@ export default function Home() {
     setPageNumber((prevPageNumber) => (prevPageNumber < 5 ? prevPageNumber + 1 : 1));
   };
   const handlePageDown = () => {
-    setPageNumber((prevPageNumber) => (prevPageNumber > 1 ? prevPageNumber - 1 : 6));
+    setPageNumber((prevPageNumber) => (prevPageNumber > 1 ? prevPageNumber - 1 : 5));
   };
 
   return (
