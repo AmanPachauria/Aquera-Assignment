@@ -15,7 +15,7 @@ export default function Header() {
             <Link to='/' className="hover:text-yellow-400">Home</Link>
           </li>
           <li>
-            <Link to='/about' className="hover:text-yellow-400">About</Link>
+            <Link to='/about' className="hover:text-yellow-400 mr-4">About</Link>
           </li>
         </ul>
       </div>
